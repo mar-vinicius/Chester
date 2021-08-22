@@ -1,5 +1,5 @@
 # Chester, o gerenciador de senhas mais simples que existe.
-<p>Este projeto é apenas um simples gerenciador de senhas, onde você pode definir indicadores e liga-los a senhas, ajudando você a ter mais tempo.</p>
+<p>Este projeto é apenas um simples gerenciador de senhas, onde você pode definir indicadores e liga-los a senhas, ajudando você a poupar mais tempo.</p>
 
 <br><br><br>
 
