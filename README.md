@@ -21,3 +21,6 @@
 <img src="https://media.discordapp.net/attachments/870398421117317120/879070061934051328/unknown.png">
 
 <p> Agora basta rodar o programa sem nenhum parâmetro e pronto, um (mini)manual para você ler de tudo que tem, por enquanto, neste shell script</p>
+
+
+# Faça o que quiser com esse script, eu não me responsabilizo pelo seu uso, modificação nem redistribuição.
