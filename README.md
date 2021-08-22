@@ -1,3 +1,5 @@
+<img src="https://media.discordapp.net/attachments/870398421117317120/879110574275956796/unknown.png">
+
 # Chester, o gerenciador de senhas mais simples que existe.
 <p>Este projeto é apenas um simples gerenciador de senhas, onde você pode definir indicadores e liga-los a senhas, ajudando você a poupar mais tempo.</p>
 
