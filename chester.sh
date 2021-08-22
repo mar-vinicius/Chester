@@ -11,7 +11,23 @@ indentifierFile="identis"
 touch $passFile
 touch $indentifierFile
 
+logo () {
+cat << "EOF"
+  /$$$$$$  /$$                             /$$                        
+ /$$__  $$| $$                            | $$                        
+| $$  \__/| $$$$$$$   /$$$$$$   /$$$$$$$ /$$$$$$    /$$$$$$   /$$$$$$ 
+| $$      | $$__  $$ /$$__  $$ /$$_____/|_  $$_/   /$$__  $$ /$$__  $$
+| $$      | $$  \ $$| $$$$$$$$|  $$$$$$   | $$    | $$$$$$$$| $$  \__/
+| $$    $$| $$  | $$| $$_____/ \____  $$  | $$ /$$| $$_____/| $$      
+|  $$$$$$/| $$  | $$|  $$$$$$$ /$$$$$$$/  |  $$$$/|  $$$$$$$| $$      
+ \______/ |__/  |__/ \_______/|_______/    \___/   \_______/|__/      
+                                                                                                                                            
+EOF
+}
+
 manual () {
+	clear
+	logo
 	echo -e "\nSeja bem vindo ao chester."
 	echo "Este shell script não é 100% seguro, não utilize-o para guardar senhas altamente importantes como senhas bancárias."
 	echo "Se for hackeado, troque suas senhas que guardou no arquivo."
@@ -28,13 +44,18 @@ manual () {
 savePasswd () {
 	echo "$PASS" >> $passFile
 	echo "$IDENT" >> $indentifierFile
-
+	
+	clear
+	logo
 	echo "[-] Senha salva... [-]"
 }
 
 viewAndCopy () {
 	linha=$(cat identis | grep -n "$IDENT" | cut -f1 -d":")	
 	cat passwords | head -$linha | tail -1 | xclip -selection clipboard
+
+	clear
+	logo
 	echo "[-] Senha para $IDENT já está na sua área de transferência [-]"
 }
 
@@ -51,7 +72,9 @@ removeOne () {
 	
 	sed -i $linha'd' $indentifierFile
 	sed -i $linha'd' $passFile
-
+	
+	clear
+	logo
 	echo "[-] $IDENT foi excluído das suas senhas [-]"
 }	
 
