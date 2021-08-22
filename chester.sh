@@ -35,8 +35,8 @@ manual () {
 	echo -e "\n<operação> <identificador> <senha>"
 	echo "Operações aceitas:"
 	echo -e "\t-S\t: Salvar uma senha, recebe como parâmetro o identificador e a senha a ser salva."
-	echo -e "\t-Da\t: Limpa TODAS as suas senhas."
-	echo -e "\t-Do\t: Limpa apenas um, que precisa ser especificado no identificador."
+	echo -e "\t-Da\t: Exclui TODAS as suas senhas salvas."
+	echo -e "\t-Do\t: Exclui apenas uma senha que precisa ser especificado no identificador."
 	echo -e "\t-M\t: Mostra o manual."
 	echo -e "\t-Vc\t: Copia para sua área de transferência."
 }
